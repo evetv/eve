@@ -1,0 +1,5 @@
+@mixin gradient($start: #fafafa, $end: #eaeaea) {
+  background-color: $end;
+  background-image: linear-gradient($start, $end);
+  background-repeat: repeat-x;
+}

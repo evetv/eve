@@ -1,0 +1,12 @@
+// The main stylesheet
+
+// Reset styles
+@import 'reset';
+
+// Import components
+@import 'components/buttons';
+
+// Configure the color for the progress bar
+.turbo-progress-bar {
+  background-color: #64b392;
+}

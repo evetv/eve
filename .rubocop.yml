@@ -1,0 +1,28 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.7
+
+Metrics/AbcSize:
+  Exclude:
+    - db/migrate/*.rb
+
+Metrics/BlockLength:
+  Exclude:
+    - config/environments/*.rb
+    - lib/tasks/*.rake
+
+Metrics/MethodLength:
+  Exclude:
+    - db/migrate/*.rb
+
+Layout/LineLength:
+  Exclude:
+    - config/initializers/devise.rb
+    - lib/tasks/*.rake
+
+Style/Documentation:
+  Enabled: false

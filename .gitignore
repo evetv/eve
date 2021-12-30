@@ -21,3 +21,6 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+/vendor/gems
+/vendor/helper.rb
+/aaa.*

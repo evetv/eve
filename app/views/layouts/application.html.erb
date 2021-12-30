@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<%= I18n.locale %>">
+<html lang="<%= I18n.locale %>" class="<%= @html_class if @html_class %>">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,10 +11,13 @@
 
     <title>Eve</title>
 
+    <%# I hate this work-around as much as you do, but it works for now %>
     <%= yield :head %>
   </head>
 
-  <body>
+  <body class="<%= body_classes %>">
+    <%= render partial: 'shared/header-logged-out' unless user_signed_in? %>
+    <%= render partial: 'shared/header-logged-in' if user_signed_in? %>
     <%= content_for?(:content) ? yield(:content) : yield %>
   </body>
 </html>

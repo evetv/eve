@@ -59,7 +59,8 @@ CREATE TABLE public.users (
     updated_at timestamp(6) without time zone NOT NULL,
     display_name character varying,
     avatar_data text,
-    role integer
+    role integer,
+    preferred_color_scheme character varying DEFAULT 'light'::character varying NOT NULL
 );
 
 
@@ -151,6 +152,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20211224192638'),
 ('20211224194018'),
 ('20211224194253'),
-('20211224195053');
+('20211224195053'),
+('20211227222359');
 
 

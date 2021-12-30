@@ -15,6 +15,8 @@ gem 'bootsnap', '~> 1.9', '>= 1.9.3', require: false
 gem 'devise', '~> 4.8', '>= 4.8.1'
 # High-level wrapper for processing images for the web with ImageMagick or libvips
 gem 'image_processing', '~> 1.12', '>= 1.12.1'
+# The fastest JSON parser and object serializer
+gem 'oj', '~> 3.13', '>= 3.13.10'
 # PG is the Ruby interface to the PostgreSQL RDBMS
 gem 'pg', '~> 1.2', '>= 1.2.3'
 # Puma is a simple, fast, threaded, and highly parallel HTTP 1.1 server for Ruby
@@ -31,6 +33,8 @@ gem 'sidekiq', '~> 6.3', '>= 6.3.1'
 gem 'stimulus-rails', '~> 1.0', '>= 1.0.2'
 # The speed of a single-page web application without having to write any JavaScript
 gem 'turbo-rails', '~> 1.0'
+# View components for Rails
+gem 'view_component', '~> 2.47'
 # Use webpack to manage app-like JavaScript modules in Rails
 gem 'webpacker', '~> 6.0.0.rc.6'
 

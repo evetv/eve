@@ -5,7 +5,9 @@ Rails.application.routes.draw do
 
   root 'landing#index'
 
-  get '/stream/:username', to: 'stream#show'
+  get '/about', to: 'about#index', as: 'about'
+
+  get '/stream/:username', to: 'stream#show', as: 'stream'
 
   namespace :about do
     get 'acknowledgments', to: 'acknowledgments#show'

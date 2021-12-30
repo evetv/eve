@@ -1,12 +1,13 @@
 // The main stylesheet
 
-// Reset styles
-@import 'reset';
-
-// Import components
-@import 'components/buttons';
+// Import Tailwind
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 // Configure the color for the progress bar
-.turbo-progress-bar {
-  background-color: #64b392;
+@layer components {
+  .turbo-progress-bar {
+    background-color: #64b392;
+  }
 }
